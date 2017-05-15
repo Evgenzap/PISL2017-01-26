@@ -17,6 +17,10 @@ public class FiboA {
     public static void main(String[] args) {
         FiboA fibo = new FiboA();
         int n = 33;
+<<<<<<< HEAD
+=======
+        n=33;
+>>>>>>> origin/master
         System.out.printf("calc(%d)=%d \n\t time=%d \n\n", n, fibo.calc(n), fibo.time());
 
         //вычисление чисел фибоначчи медленным методом (рекурсией)
@@ -29,6 +33,7 @@ public class FiboA {
     private int calc(int n) {
         //здесь простейший вариант, в котором код совпадает с мат.определением чисел Фибоначчи
         //время O(2^n)
+<<<<<<< HEAD
         int a = 1, b = 1;
         if (n <= 2)
             return 1;
@@ -39,6 +44,10 @@ public class FiboA {
             }
         }
         return b;
+=======
+        if((n==1)||(n==2)) return 1;
+        return calc(n-1)+calc(n-2);
+>>>>>>> origin/master
 
     }
 
